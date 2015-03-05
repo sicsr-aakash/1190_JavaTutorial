@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testquiz.TestQuizActivity" >
+
+
+    <ScrollView
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" >
+<TableLayout            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#000000">
+                        <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="1.What is the prototype of the default constructor?"  android:layout_span="4"
+                                android:padding="18dip"
+                                android:textColor="#ffffff"/>
+                       </TableRow>
+                        <!-- Row 2 with 3 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <RadioGroup
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+
+            <RadioButton
+                android:id="@+id/answer1A"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:text="Test( )."
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/answer1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="public Test( )" />
+            <RadioButton
+                android:id="@+id/answer1C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="public Test(void)" />
+        </RadioGroup>
+                        </TableRow>
+                      <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="2.Which two of the following methods are defined in class Thread? "  android:layout_span="4"                              android:padding="18dip"
+                                android:textColor="#ffffff"/>
+                       </TableRow>
+                        <!-- Row 2 with 3 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <RadioGroup
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+            <RadioButton
+                android:id="@+id/answer2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="notify()" />
+            <RadioButton
+                android:id="@+id/answer2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="wait()" />
+            <RadioButton
+                android:id="@+id/answer2C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="start()" />
+        </RadioGroup>
+                        </TableRow>
+                         <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="18dp" android:text="3. Which is the most restrictive access that accomplishes this objective?"  android:layout_span="4"
+                                 android:padding="18dip"
+                                android:textColor="#ffffff"/>
+                       </TableRow>
+                        <!-- Row 2 with 3 columns -->
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <RadioGroup
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+            <RadioButton
+                android:id="@+id/answer3A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="protected" />
+            <RadioButton
+                android:id="@+id/answer3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="private" />
+            <RadioButton
+                android:id="@+id/answer3C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="public" />
+        </RadioGroup>
+                        </TableRow>
+                         <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal">
+                            <Button 
+                                android:id="@+id/submit"
+      							  android:layout_width="wrap_content"
+      							  android:layout_height="wrap_content"
+      							  android:layout_alignParentLeft="true"
+       								 android:layout_alignParentTop="true"
+       							 android:gravity="center"
+        							android:text="Submit"
+                              	  />
+                       </TableRow>
+      </TableLayout>
+</ScrollView>
+    
+    
+
+</RelativeLayout>
